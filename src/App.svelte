@@ -1,32 +1,54 @@
 <script>
-  import Navbar from "./lib/Navbar.svelte";
+  import Search from "./lib/Search.svelte";
+  import Menu from "./lib/Menu.svelte";
 </script>
 
-<header>
-  <div>
-    <h1 class="app-name">App de Seguimiento</h1>
-  </div>
-</header>
+<div class="flex-container">
+  <header>
+    <div class="logo">
+      <h1 class="app-name">App de Seguimiento</h1>
+    </div>
+  </header>
 
-<nav>
-  <div>
-    <Navbar />
-  </div>
-</nav>
+  <nav>
+    <div>
+      <Search />
+    </div>
+  </nav>
 
-<main>
-  <div>
+  <main>
+    <div>
+    </div>
+  </main>
+
   </div>
-</main>
 
 <style>
-  .app-name {
-    float: left;
-    margin-left: 50px;
+
+  .flex-container{
+    display: flex;
   }
 
-  nav {
-    margin-top: 25px;
-    margin-left: 50px;
+  header{
+    display: flex;
+    flex: 60%;
   }
+
+  .logo{
+    margin-top: 25px;
+    margin-left: 100px;
+  }
+
+  nav{
+    display: flex;
+    justify-content: right;
+    flex: 40%;
+    margin-top: 25px;
+    margin-right: 100px;
+  }
+
+  aside {
+    display: flex;
+  }
+
 </style>
